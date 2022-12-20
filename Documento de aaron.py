@@ -6,8 +6,8 @@ import pyautogui
 
 
 path = os.getcwd()+ '/payloads/'
-path_post = os.getcwd()+ '/post/'
-path_post_sh = os.getcwd()+ '/post/android_pers.sh'
+path_post = os.getcwd()+ '/pers_android/'
+path_post_sh = os.getcwd()+ '/pers_android/android_pers.sh'
 path_sh = 'android?pers.sh'
 new = path_post.replace("/", "-")
 path_pers_win = os.getcwd()+ '/pers_win/'
